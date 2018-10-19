@@ -1,10 +1,11 @@
 import fetch from 'node-fetch';
+import ApiFromJava from '../apifromjava'
 export default class BaseComponent {
 	constructor () {
 	}
 	async baseCheckAdmin (cookie) {
 		let reqJson = {}
-		reqJson.url = 'http://asset-daily.ycd360.cn/api/asset/positions/1/sub-positions/count'
+		reqJson.url = ApiFromJava.checkIsAdmin
 		reqJson.cookie = cookie
 		const responseJson = await this.fetch(reqJson)
 		return responseJson

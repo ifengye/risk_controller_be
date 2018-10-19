@@ -13,7 +13,7 @@ class Check extends BaseComponent{
 			res.send({
 				status: 0,
 				type: 'ERROR_SESSION',
-				message: '亲，您还没有登录',
+				message: '您还没有登录',
 			})
 			return
 		}else{
