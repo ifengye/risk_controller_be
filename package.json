@@ -6,7 +6,7 @@
   "author": "sly",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development supervisor --harmony index.js"
+    "dev": "cross-env NODE_ENV=development node --harmony index.js"
   },
   "dependencies": {
     "babel": "^6.23.0",
