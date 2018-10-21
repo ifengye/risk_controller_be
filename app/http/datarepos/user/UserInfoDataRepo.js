@@ -6,7 +6,7 @@ class UserInfoDataRepo {
 
     async getUserInfoByIds(ids){
         // var userInfo = await UserModel.execSql('select * from users where id=1');
-        var fields = 'id,realname,created_at';
+        var fields = 'id,username,nickname,created_at';
         var conditions = {
             '>': {
                 'id': 1000,
