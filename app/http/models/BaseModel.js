@@ -15,7 +15,6 @@ export default class BaseModel {
         this.table = ''; // 默认数据库表，子类必须重新写表名
     }
 
-
     /**
      * 执行sql语句
      * @param {*} sql 
@@ -31,7 +30,15 @@ export default class BaseModel {
         return result;
     }
 
-    async queryWithLimit(fields, conditions, orders, start, limit){
+    /**
+     * 限定查询
+     * @param {*} fields 查询字段
+     * @param {*} conditions 查询条件
+     * @param {*} orders 顺序
+     * @param {*} start 
+     * @param {*} limit 
+     */
+    async queryWithLimit(fields, conditions, orders, start = 0, limit = 100){
         var result;
 
         var sql = "select " + fields + " from " + this.table + " ";
