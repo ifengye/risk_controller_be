@@ -4,5 +4,9 @@
  * 2、登录校验
  * 3、action转发
  */
-class BaseController {
+export default class BaseController {
+    constructor(){
+        // 构造函数
+        // 1、登录验证
+    }
 }
