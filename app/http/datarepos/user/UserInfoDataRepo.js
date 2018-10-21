@@ -9,7 +9,7 @@ class UserInfoDataRepo {
         var fields = 'id,username,nickname,created_at';
         var conditions = {
             '>': {
-                'id': 1000,
+                'id': 1,
                 'created_at': '2018-01-01 00:00:00',
             },
             // '<': {
