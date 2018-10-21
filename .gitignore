@@ -13,5 +13,11 @@ yarn-debug.log*
 yarn-error.log*
 /config/default.js
 
-config/default.js
-.gitignore
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
